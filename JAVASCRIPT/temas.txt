@@ -1,0 +1,18 @@
+1) Variables.
+2) Objetos.
+3) Arreglos.
+4) Comentarios.
+5) Numeros.
+6) Fechas.
+7) Strings.
+8) Condicionales IF, IF ELSE y ELSE.
+9) Operadores para y, o.
+10) Condicionales Switch.
+11) Operadores.
+12) Loops - For.
+13) Loops - While y DO While.
+14) Funciones.
+15) Funciones con argumentos.
+16) Funciones que retornan valores.
+17) Scope.
+18) InnerHTML.

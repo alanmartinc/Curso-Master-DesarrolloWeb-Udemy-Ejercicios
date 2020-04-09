@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aprendiendo JavaScript</title>
+    <link rel="stylesheet" href="archivos/prism.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2>Nuestro primer programa en JavaScript</h2>
+      <pre class="language-js">
+        <code>
+          var nombre = prompt('Como te llamas?'); 
+          var pais = prompt('De donde eres?');
+
+          alert("Bienvenido " + nombre + " de " + pais);
+        </code>
+      </pre>
+    
+      <h2>JavaScript en un archivo externo</h2>
+      <pre class="language-js">
+        <code>
+          var nombre = prompt('Como te llamas?'); 
+          var pais = prompt('De donde eres?');
+
+          alert("Bienvenido " + nombre + " de " + pais );
+        </code>
+      </pre>
+    
+      <h2>Creando variables</h2>
+      <pre class="language-js">
+        <code>
+          var modelo = 'Mustang';
+          var motor = 5.5;
+          var color = "Azul";
+
+          var modelo2, motor2, color2;
+
+          modelo2 = 'Camaro';
+          motor2 = 5.8;
+          color2 = "Negro";
+          modelo = 'Challenger';
+
+          var modelo = 'Mustang';
+
+          console.log(modelo);
+        </code>
+      </pre>
+  
+      <h2>Creando objetos</h2>
+      <pre class="language-js">
+        <code>
+          var auto = {
+            nombre: 'Mustang',
+            motor: 5.5,
+            color: "Azul",
+            clasico: true,
+            anio: 1965
+          }
+
+          console.log(auto.nombre);
+          console.log(auto.motor);
+          console.log(auto.color);
+          console.log(auto.clasico);
+          console.log(auto.anio);
+        </code>
+      </pre>
+    
+      <h2>Arreglos</h2>
+      <pre class="language-js">
+        <code>
+          var premierLeague = ['Chelsea', "Manchester United", "Liverpool", "Arsenal", "Tottenham"];
+
+          console.log(premierLeague);
+          console.log(premierLeague[2]);
+
+          var la_liga = new Array("Barcelona", "Real Madrid", "Atletico de Madrid");
+
+          console.log(la_liga);
+          console.log(la_liga.length);
+
+          la_liga[0] = "Valencia";
+
+          console.log(la_liga.reverse());
+          console.log(typeof(la_liga));
+        </code>
+      </pre>
+    
+      <h2>Modificando arreglos</h2>
+      <pre class="language-js">
+        <code>
+          var premierLeague = ['Chelsea', "Manchester United", "Liverpool", "Arsenal", "Tottenham"];
+          console.log(premierLeague);
+
+          premierLeague.push("Manchester City");
+          console.log(premierLeague);
+
+          // Buscar elemento en un array
+
+          console.log(premierLeague.indexOf("Manchester United"));
+
+          premierLeague[2] = 'Leicester';
+          console.log(premierLeague);
+
+          // Quitar ultimo elemento
+
+          premierLeague.pop();
+          console.log(premierLeague);
+
+          // Quitar algun elemento
+
+          premierLeague.splice(2,1)
+          console.log("Quitar alguno de a medias");
+          console.log(premierLeague);
+
+          // Con Filter
+
+          console.log("Filter");
+          var premierLeague = ['Chelsea', "Manchester United", "Liverpool", "Arsenal", "Tottenham"];
+
+          var nuevoArreglo = premierLeague.filter(function(equipo) {
+            return (equipo !== 'Chelsea');
+          });
+
+          console.log(nuevoArreglo);
+        </code>
+      </pre>
+      
+      <h2>Comentarios</h2>
+      <pre class="language-js">
+        <code>
+          // Comentario de una linea
+
+          /*
+            Crea un objeto
+          */
+
+          var auto = {
+            nombre: "Mustang",
+            anio: 1965,
+            motor: 5.5,
+            color: "Azul", // Color del objeto
+            clasico: true,
+            es_real: false
+          }
+        </code>
+      </pre>
+      
+      <h2>Espacios en blanco</h2>
+      <pre class="language-js">
+        <code>
+          var nombre = "Juan";
+          console.log("Mi nombre es: " + nombre);
+
+          var auto = {
+            nombre: "Mustang",
+            anio: 1965,
+            motor: 5.5,
+            color: "Azul", // Color del objeto
+            clasico: true,
+            es_real: false
+          }
+        </code>
+      </pre>
+    
+      <h2>Números en JavaScript</h2>
+      <pre class="language-js">
+        <code>
+          var numero1 = "15";
+          var numero2 = -20;
+          var numero3 = 21.5;
+          var numero4 = "12.41513";
+          var numero5 = -30.144;
+
+          console.log(typeof(numero1));
+          console.log(typeof(numero2));
+          console.log(typeof(numero3));
+          console.log(typeof(numero4));
+          console.log(typeof(numero5));
+
+          var numero6 = parseFloat(numero4);
+          console.log(typeof(numero6));
+
+          var numero7 = parseInt(numero1);
+          console.log(typeof(numero7));
+
+          var numero8 = Number(numero1);
+          console.log(typeof(numero8));
+
+          console.log(parseFloat(numero4).toFixed(2));
+        </code>
+      </pre>
+    
+      <h2>Números en JavaScript</h2>
+      <pre class="language-js">
+        <code>
+          /** Fechas **/
+
+          var fecha = new Date();
+          console.log(fecha);
+
+          console.log("El año actual es: "+fecha.getFullYear());
+          console.log("El día actual es: "+fecha.getDate());
+          console.log("El día de la semana es: "+fecha.getDay());
+          console.log("La hora es: "+fecha.getHours());
+          console.log("Con: "+fecha.getMinutes());
+        </code>
+      </pre>
+
+      <h2>Strings en JavaScript</h2>
+      <pre class="language-js">
+        <code>
+          /* Strings **/
+
+          var texto = "Esta es una cadena de texto";
+          console.log(texto);
+
+          console.log(typeof(texto));
+          console.log(texto.toUpperCase());
+          console.log(texto.length);
+          console.log(texto.split(" "));
+          console.log(texto.indexOf("cadena"));
+          console.log(texto.slice(0,11));
+
+          var texto2 = "Hola Mundo";
+          console.log(texto2.toLowerCase());
+        </code>
+      </pre>
+
+      <h2>Condicionales IF - ELSE IF - ELSE</h2>
+      <pre class="language-js">
+        <code>
+          /* IF */
+
+          var cantidadAPagar = 100;
+          var saldo = 500;
+
+          if(saldo < cantidadAPagar) {
+            console.log("No hay recursos");
+          }
+
+          // IF ELSE //
+
+          var cantidadAPagar = 100;
+          var saldo = 500;
+
+          if(saldo < cantidadAPagar) {
+            console.log("No hay recursos");
+          } else {
+            console.log("el pago se ha realizado");
+          }
+
+          // IF, IF ELSE, ELSE //
+
+          var edad1 = 20;
+          var edad2 = 20;
+
+          if(edad1 > edad2) {
+            console.log("La edad1 es mayor");
+          } else if(edad1==edad2) {
+            console.log("Son iguales");
+          } else {
+            console.log("La edad2 es mayor");
+          }
+
+          var edad3 = "20";
+          var edad4 = 20;
+
+          // Forma estricta de comparar
+
+          if(edad3 === edad4) {
+            console.log("Es la misma edad");
+          } else {
+            console.log("No es la misma edad");
+          }
+
+          // Comparando cadenas
+
+          var texto1 = "hola mundo";
+          var texto2 = "Hola Mundo";
+
+          if(texto1.toLowerCase() == texto2.toLowerCase()) {
+            console.log("Son iguales");
+          } else {
+            console.log("Son diferentes");
+          }
+
+          // Es diferente
+
+          var texto3 = "hola";
+          var texto4 = "hola";
+
+          if(texto3 != texto4) {
+            console.log("Son iguales");
+          } else {
+            console.log("No son iguales");
+          }
+        </code>
+      </pre>
+
+      <h2>Operadores && y ||</h2>
+      <pre class="language-js">
+        <code>
+          /* IF */
+
+          var cantidadAPagar = 100;
+          var saldo = 101;
+          var recargaTel = 10;
+          var usuarioValido = false;
+
+          if(saldo > cantidadAPagar && usuarioValido) {
+            console.log("Ha pagado y es un usuario valido");
+          } else {
+            console.log("No se pudo pagar");
+          }
+
+          var cantidadAPagar = 1000;
+          var efectivo = 500;
+          var tarjetaCredito = true;
+
+          if(efectivo > cantidadAPagar || tarjetaCredito) {
+            console.log("El pago se ha realizado");
+          } else {
+            console.log("El pago no se pudo realizar");
+          }
+        </code>
+      </pre>
+
+      <h2>Switch</h2>
+      <pre class="language-js">
+        <code>
+          /** Switch **/
+
+          var metodoDePago = 'PayPal';
+
+          switch (metodoDePago) {
+            case 'TC':
+              console.log("Ha pagado con tarjeta de credito");
+              break;
+            case 'Efectivo':
+              console.log("Ha pagado con efectivo");
+              break;
+            case 'PayPal':
+              console.log("Ha pagado con PayPal");
+              break;
+            default:
+              console.log("Método de pago no valido");
+              break;
+            }
+        </code>
+      </pre>
+
+      <h2>Operadores</h2>
+      <pre class="language-js">
+        <code>
+          /** Operadores **/
+
+          var numero1 = 20;
+          var numero2 = 10;
+
+          // Suma
+          console.log(numero1 + numero2);
+
+          // Resta
+          console.log(numero1 - numero2);
+
+          // Multiplicacion
+          console.log(numero1 * numero2);
+
+          // division
+          console.log(numero1 / numero2);
+
+          //numero1++;
+          numero2--;
+
+          // Incrementos
+          console.log(numero1++);
+          console.log(numero2);
+
+          // Sumar sobre la misma variable
+          var numero3 = 20;
+
+          console.log("el numero3 es: " + numero3);
+          numero3 +=20;
+          console.log("el numero3 es: " + numero3);
+          numero3 -=20;
+          console.log("el numero3 es: " + numero3);
+          numero3 *=20;
+          console.log("el numero3 es: " + numero3);
+          numero3 /=20;
+          console.log("el numero3 es: " + numero3);
+
+          /** Ejemplo avanzado **/
+
+          var cantidadAPagar = 100;
+          var saldo = 101;
+          var recargaTel = 10;
+
+          if(saldo > cantidadAPagar) {
+            console.log("Pago realizado");
+            saldo -= cantidadAPagar;
+            console.log(saldo);
+            if(recargaTel < saldo) {
+              console.log("Recarga telefono realizada");
+            } else {
+              console.log("No alcanzo para la recarga");
+            }
+          } else {
+            console.log("No se pudo pagar");
+          }
+        </code>
+      </pre>
+
+      <h2>Loops - FOR</h2>
+      <pre class="language-js">
+        <code>
+          var i;
+
+          for (var i = 0; i <= 20; i++) {
+            console.log(i);
+          }
+
+          for (var i = 0; i <= 20; i++) {
+            if(i == 5) {
+                console.log("Cinco");
+                continue;
+            }
+            console.log(i);
+          }
+
+          for (var i = 0; i <= 20; i++) {
+            if(i == 5) {
+                console.log("Cinco");
+                break;
+            }
+            console.log(i);
+          }
+
+          for (var i = 20; i >= 0; i--) {
+            console.log(i);
+          }
+
+          var premierLeague = ['Chelsea', "Manchester United", "Liverpool", "Arsenal", "Tottenham"];
+          console.log(premierLeague);
+
+          for(var i = 0; i&lt;premierLeague.length; i++) {
+            console.log(premierLeague[i]);
+          }
+        </code>
+      </pre>
+
+      <h2>Loops - WHILE y DO WHILE</h2>
+      <pre class="language-js">
+        <code>
+          var i = 0;
+
+          while (i <= 10) {
+            console.log(i);
+            i++;
+          }
+
+          var contar = 0;
+
+          do {
+              console.log(contar + " veces 7 es igual a "+ contar * 7);
+          } while (contar++ < 0)
+        </code>
+      </pre>
+
+      <h2>Funciones</h2>
+      <pre class="language-js">
+        <code>
+          /** Funciones **/
+
+          //alert("Funciona");
+
+          function suma() {
+            console.log(2+1);
+          }
+
+          suma();
+          suma();
+          suma();
+
+          function suma2() {
+            console.log(2+2);
+          }
+
+          suma2();
+
+          function array_frutas() {
+            var frutas = ['Fresa', 'Naranja', 'Durazno', 'Melon'];
+            console.log(frutas);
+          }
+
+          array_frutas();
+
+          var mi_funcion = function() {
+            var frutas = ['Fresa', 'Naranja', 'Durazno', 'Melon'];
+            console.log(frutas);
+          }
+
+          mi_funcion();
+
+          var auto = {
+            nombre: "Mustang",
+            anio: 1965,
+            motor: 5.5,
+            color: "Azul",
+            clasico: true,
+            es_real: false
+          }
+
+          function recorrer_objeto(automovil) {
+            console.log(this.nombre);
+            console.log(this.anio);
+            console.log(this.motor);
+            console.log(this.color);
+            console.log(this.clasico);
+            console.log(this.es_real);
+          }
+
+          auto.mostrarAuto = recorrer_objeto;
+          auto.mostrarAuto();
+        </code>
+      </pre>
+
+      <h2>Funciones con argumentos</h2>
+      <pre class="language-js">
+        <code>
+          /** funciones con argumentos **/
+
+          function suma(n1, n2) {
+            console.log(n1 + n2);
+          }
+
+          suma(10,20);
+          suma(20,30);
+
+          function multiplicar(n1,n2) {
+            console.log(n1*n2);
+          }
+
+          multiplicar(3,3);
+
+          var frutas = [];
+
+          function array_frutas(fruta) {
+            frutas.push(fruta);
+            console.log(frutas);
+          }
+
+          array_frutas('Durazno');
+          array_frutas('Fresa');
+          array_frutas('Melon');
+
+          /** Carrito **/
+
+          const IMPUESTO = 0.16;
+          var total = 0;
+
+          function carrito(articulo, precio) {
+            console.log("Articulo " + articulo + " Precio $" + precio);
+            total += precio + (IMPUESTO*precio);
+            console.log("Impuesto:" + precio * IMPUESTO);
+            console.log("Total: $" + total.toFixed(2));
+          }
+        </code>
+      </pre>
+
+      <h2>Funciones que retornan valores</h2>
+      <pre class="language-js">
+        <code>
+          /** Funciones que retornan valores **/
+
+          var numero1;
+
+          function multiplicarx20(numero) {
+            numero = numero *20;
+            return numero;
+          }
+
+          var resultado = multiplicarx20(10);
+          resultado *= 10;
+
+          console.log(resultado);
+
+          // Otro ejemplo
+
+          const IMPUESTO = .16;
+          var cantidad;
+
+          function totalPagar(numero) {
+            numero = numero + (numero * .16);
+            return numero;
+          }
+
+          var resultado = totalPagar(1200);
+          console.log(resultado);
+        </code>
+      </pre>
+
+      <h2>Scope</h2>
+      <pre class="language-js">
+        <code>
+          var a = 20;
+
+          function scope1() {
+            var a = 1;
+            console.log(a);
+          }
+
+          function scope2() {
+            var a = 2;
+            console.log(a);
+          }
+
+          scope1();
+          scope2();
+        </code>
+      </pre>
+
+      <h2>InnerHTML</h2>
+      <pre class="language-js">
+        <code>
+          var total, numero1, numero2;
+
+          function totalaPagar(numero1, numero2) {
+            total = numero1 * numero2;
+            return total;
+          }
+
+          var granTotal = totalaPagar(10,20);
+          var calculadora = document.getElementById("resultado").innerHTML = granTotal + " Dolares";
+        </code>
+      </pre>
+    </div>
+    
+    <style>
+      body {
+        background-color:#358ccb;
+      }
+
+      h2 {
+        color:white;
+        text-align: center;
+        font-family: 'Prociono', serif;
+      }
+
+      div.contenedor {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    </style>
+    
+    <script src="archivos/prism.js"></script>
+  </body>
+</html>
