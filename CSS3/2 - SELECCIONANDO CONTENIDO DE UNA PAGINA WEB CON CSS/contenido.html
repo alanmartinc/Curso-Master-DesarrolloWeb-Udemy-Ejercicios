@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Practicando CSS">
+    <title>Mi primera Página Web con CSS3</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+
+    <header>
+      <div>
+        <img src="img/logo.png" class="logo" id="logo">
+      </div>
+    </header>
+
+    <nav id="navegacion">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main class="contenido-principal">
+
+      <section id="introduccion" class="seccion">
+        <h2 id="titulo" class="titulo">Aprendiendo CSS3</h2>
+        <h3 class="azul subtitulo">Subtitulo</h3>
+        <img src="img/css3.png">
+        <p id="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <p class="parrafo"><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <section id="cursos" class="seccion">
+
+          <ul id="listado-cursos">
+
+            <li>Diseño Web
+              <ul>
+                <li>CSS3</li>
+                <li>HTML5</li>
+                <li>JavaScript</li>
+              </ul>
+            </li>
+
+            <li>Phyton</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+
+          </ul>
+
+          <p>A los mejores precios</p>
+          <a href="http://www.facebook.com" id="btnCursos" class="button cursos">Ver todos los cursos</a>
+
+
+          <h3>Próximos Cursos</h3>
+
+          <table>
+            
+            <thead>
+              <tr>
+                <th>Curso</th>
+                <th>Fecha</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>PHP</td>
+                <td>10/10/2020</td>
+              </tr>
+
+              <tr>
+                <td>MySQL</td>
+                <td>10/10/2020</td>
+              </tr>
+
+              <tr>
+                <td>JavaScript</td>
+                <td>10/10/2020</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+      </section>
+
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </main>
+  </body>
+</html>

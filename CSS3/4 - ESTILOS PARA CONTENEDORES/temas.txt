@@ -1,0 +1,17 @@
+1) Background.
+2) Definir un ancho y alto.
+3) Margenes.
+4) Padding.
+5) Atajo margenes y padding. 
+6) Previniendo el margin collapse.
+7) Que es el box sizing.
+8) Bordes. 
+9) Floats.
+10) Posicion relativa y absoluta.
+11) Displays: inline-block y none. 
+12) Display: flex.
+13) Display: table cell.
+14) Border radius.
+15) Imagenes como fondo. 
+16) Posicion de las imagenes como fondo.
+17) Distintas imagenes como fondo.

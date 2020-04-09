@@ -1,0 +1,11 @@
+1) Font family. 
+2) Font face. 
+3) Font size.
+4) Font style.
+5) Font weight. 
+6) Interlineado.
+7) Atajo para las fuentes.
+8) Alineacion. 
+9) Espaciado. 
+10) Indentacion.
+ 

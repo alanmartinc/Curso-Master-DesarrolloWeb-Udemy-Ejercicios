@@ -1,0 +1,129 @@
+/* Se descargo la fuente en Font squirrel */
+
+@font-face {
+    font-family: 'acknowledgementmedium';
+    src: url('acknowledgement.woff2') format('woff2'),
+         url('acknowledgement.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Font Family */
+
+body {
+	font-family: Arial, Helvetica, serif;
+}
+
+h2 {
+	font-family: 'acknowledgementmedium', Verdana, Geneva, sans-serif;
+	font-size: 30px;
+	font-style: italic;
+	text-transform: uppercase;
+
+	/* Texto normal */
+	font-weight: normal;
+
+	/* Texto centrado */
+	text-align: center;
+
+	/* Espaciado */
+	letter-spacing: 2px;
+}
+
+h3 {
+	font-family: 'Times New Roman', serif;
+	font-size: 22px;
+	
+	/* Se usa en dispositivos moviles o responsive desing:
+	font-size: 3rem;
+	font-size: 4em; 
+	*/
+
+	/* Primera mayúscula y las siguientes del mismo tamaño */
+	font-variant: small-caps;
+
+	/* Fuente más delgada */
+	font-weight: lighter;
+
+	/* Texto a la derecha */
+	text-align: right;
+}
+
+p {
+	/* Fuente */
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 18px;
+
+	/* Primer mayúscula */
+	text-transform: capitalize;
+
+	/* Negrita */
+	font-weight: bold;
+
+	/* Separación entre lineas */
+	line-height: 40px;
+
+	/* Texto a la izquierda */
+	text-align: left;
+
+	/* Texto justificado */
+	text-align: justify;
+}
+
+div.noticia p {
+	/* Indentacion - espaciado */
+	text-indent: 100px;
+}
+
+a {
+	/* Tamaño */
+	font-size: 14px;
+
+	/* Mayúscula */
+	text-transform: uppercase;
+
+	/* sacar el subrayado */
+	text-decoration: none;
+}
+
+section#introduccion p {
+	font-variant: small-caps;
+}
+
+section#introduccion p span {
+	/* Cursiva */
+	font-style: italic;
+
+	/* Agregar subrayado */
+	text-decoration: underline;
+}
+
+#listado-cursos {
+	/* Minúscula */
+	text-transform: lowercase;
+}
+
+p.oferta span {
+	/* Agrega tachado */
+	text-decoration: line-through;
+}
+
+div.oferta {
+	height: 80px;
+
+	/* Color de fondo */
+	background-color: red;
+}
+
+div.oferta h2 {
+	/* Centrar verticalmente - misma altura que el height padre */
+	line-height: 80px;
+}
+
+/* 	Atajo para las fuentes:
+
+	font: italic small-caps normal 30px/30px verdana;
+
+*/
+
+

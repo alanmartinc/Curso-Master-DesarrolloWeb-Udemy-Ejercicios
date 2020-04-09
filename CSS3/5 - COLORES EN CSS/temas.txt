@@ -1,0 +1,9 @@
+1) Colores por nombre. 
+2) Colores hexadecimal.
+3) Colores RGB. 
+4) Colores HSL. 
+5) Opacity.
+6) RGBA y HSLA. 
+7) Sombras. 
+8) Degradados.
+ 

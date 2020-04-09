@@ -1,0 +1,159 @@
+h2 {
+	color: blue;
+	/* Texto oscuro */
+	text-transform: uppercase;
+	padding: 20px;
+
+}
+
+/* Selectores de ID */
+#parrafo {
+	color: red;
+	padding: 20px;
+}
+
+/* Selectores de Clases */
+.parrafo {
+	color: green;
+	padding: 20px;
+}
+
+/* Selectores con Clase y ID */
+#titulo, .titulo {
+	font-size: 40px;
+}
+
+/* Selectores con 2 Clases */
+.azul, subtitulo {
+	color: grey;
+	padding: 20px;
+	font-size: 30px;
+}
+
+/* Selectores con elementos HTML */
+p {
+	color: brown;
+	padding: 20px;
+}
+
+img {
+	width: 200px;
+}
+
+/* Selectores con elementos HTML y ID */
+img#logo {
+	width: 500px;
+}
+
+h2#titulo {
+	color: orange;
+}
+
+/* Selectores elementos HTML y Clases */
+section.seccion {
+	background: #FFEEEA;
+}
+
+/* Selector universal */
+* {
+	color: violet /*!important */;
+}
+
+#listado-cursos * {
+	color: blue;
+	font-size: 30px;
+}
+
+/* Grupo de selectores */
+h2, h3, p, a {
+	text-transform: uppercase;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+/* Selector descendiente */
+nav#navegacion {
+	background-color: orange;
+}
+
+nav#navegacion ul {
+	list-style: none;
+}
+
+nav#navegacion ul li {
+	display: inline;
+}
+
+nav#navegacion ul li a {
+	color: white;
+}
+
+/* Selector con hijos */
+section#cursos > ul {
+	border: 1px solid black;
+}
+
+ul#listado-cursos > li {
+	color: red;
+}
+
+ul#listado-cursos li ul > li{
+	color: green;
+}
+
+/* Selector con elementos adyacentes */
+ul#listado-cursos + p {
+	background-color: red!important;
+	color: white;
+}
+
+/* Selectores para enlaces */
+a[href*="facebook.com"] {
+	background-color: yellow;
+}
+
+/* Selectores de atributo */
+img[id="logo"] {
+	margin-top: 0;
+}
+
+[class="seccion"] {
+	background-color: blue /* !important */;
+}
+
+/* Selectores con pseudo clases */
+div.menu nav ul li a:focus,
+div.menu nav ul li a:visited,
+div.menu nav ul li a:active {
+	color: black;
+}
+
+div.menu nav ul li:first-child a {
+	text-decoration: none;
+}
+div.menu nav ul li a:hover {
+	color: orange;
+}
+
+/* Selectores con pseudo clases y NTH-CHILD */
+div.menu nav ul li:nth-child(1) {
+	background-color: red;
+}
+
+div.menu nav ul li:nth-child(2) {
+	background-color: yellow;
+}
+
+div.menu nav ul li:nth-child(3) {
+	background-color: blue;
+}
+
+table tbody tr:nth-child(odd){
+	background-color: orange;
+}
+
+table tbody tr:nth-child(even){
+	background-color: yellow;
+}

@@ -1,0 +1,5 @@
+1) Etiqueta style.
+2) Sintaxis.
+3) Selectores.
+4) Reset css o normalize.
+5) Comentarios.

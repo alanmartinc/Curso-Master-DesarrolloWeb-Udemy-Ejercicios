@@ -1,0 +1,252 @@
+/** Background **/
+body {
+  background: gray;
+}
+.contenedor {
+  background: white;
+}
+header {
+  background: orange
+}
+nav {
+  background: purple;
+}
+table {
+  background: cyan;
+}
+footer {
+  background: orange;
+}
+footer nav {
+  background: transparent;
+}
+
+/** Anchos y Altos **/
+.contenedor {
+  width: 1000px;
+}
+nav {
+  height: 80px;
+}
+table {
+  width: 300px;
+}
+img.logocss3 {
+  width: 90px;
+}
+
+/** Margenes **/
+.contenedor {
+  margin: 0px auto;
+}
+header {
+  margin: 0px 0px 30px;
+}
+h2 {
+  margin-bottom: 30px;
+}
+table {
+  /* Margin: 12, 3, 6, 9 (Agujas del reloj) */
+  margin: 0px 0px 30px 30px;
+}
+footer {
+  margin-top: 30px;
+}
+
+/** Padding **/
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+nav {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+nav ul {
+  padding: 0;
+}
+table tr td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer {
+  padding-top: 20px;
+}
+
+/** Colapso de margenes: **
+
+margin-bottom: 100px;
+overflow: hidden;
+border-bottom: 1px solid black;
+padding: 1px;
+display: inline-block;
+
+*/
+
+.contenedor {
+  padding-bottom: 30px;
+}
+
+/** Box Model **/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+section#introduccion {
+  width: 400px;
+  background-color: yellow;
+  padding: 30px;
+}
+section#cursos {
+  width: 400px;
+  background-color: orange;
+  border: 30px solid black;
+  padding: 30px;
+}
+
+/** Borders **/
+section#cursos {
+  border-top: 30px;
+  border-style: dashed;
+  border-color:orange;
+}
+section#cursos {
+  border-top: 30px;
+  /* Border: solid, dashed, double */
+  border-style: dotted; 
+}
+section#cursos {
+  border: 30px dotted black;
+}
+main.contenido-principal {
+  width: 700px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+
+/* Limpia el float */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+section#cursos {
+  width: 100%;
+}
+table {
+ margin: 0;
+}
+#navegacion ul {
+  list-style: none;
+}
+#navegacion ul li {
+  float: left;
+  margin-right: 20px;
+}
+#navegacion ul li a {
+  color: #ffffff;
+}
+
+/** Position relative y absolute **/
+header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+.rojo {
+  background-color: red;
+}
+.azul {
+  background-color: blue;
+}
+div.padre {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+/** Display **/
+section#introduccion {
+  display: none;
+  display: block;
+  background: yellow;
+  padding: 80px;
+
+  /* Salimos de css con .. */
+  background-image: url(../img/css3.png), url(../img/html5.png);
+  background-repeat: no-repeat, repeat-x;
+  background-size: 180px;
+
+  /* Posiciones de fondo */
+  background-position: top center, bottom center;
+  /* background-position: 400px 50px; */
+}
+
+/* Background-image:
+
+background: repeat-x;
+background: repeat-y;
+background-size: cover;
+
+*/
+
+.noticia h3 {
+  background-color: red;
+  display: block;
+}
+.noticia .escrito {
+  background-color: yellow;
+}
+#noticias a {
+  background-color: orange;
+}
+.noticia h3,
+.noticia .escrito {
+  display: inline;
+}
+.noticia h3 {
+  /* Con inline no se le puede dar un ancho */
+  display: inline;
+}
+.noticia h3 {
+  /* Con inline-block si se le puede dar un ancho */
+  display: inline-block;
+  width: 100%;
+}
+.gran-promocion {
+  /* Centrando con display table */
+  display: table;
+  width: 100%;
+  background-color: yellow;
+  margin-top: 20px;
+  height: 200px;
+}
+.texto-promocion {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/** Border radius **/
+.gran-promocion {
+  /* Esquinas redondeadas */
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 40px;
+
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+.gran-promocion {
+  width: 400px;
+  height: 400px;
+
+  /* Circulo */
+  border-radius: 50%;
+}

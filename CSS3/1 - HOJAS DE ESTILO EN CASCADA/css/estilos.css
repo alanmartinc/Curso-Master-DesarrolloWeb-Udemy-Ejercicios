@@ -1,0 +1,13 @@
+h2 {
+	color: blue;
+	/* Texto oscuro */
+	text-transform: uppercase;
+	background-color: red;
+	padding: 20px;
+
+}
+
+/* Selectores: 
+	ID = #
+	Class = .
+*/

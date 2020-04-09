@@ -1,0 +1,17 @@
+1) Direccionando IDs.
+2) Seleccionando: IDs y clases.
+3) Seleccionando: 2 clases.
+4) Seleccionando: elementos html.
+5) Seleccionando: elementos html y ID.
+6) Seleccionando: elementos html y clases.
+7) Selectores universal.
+8) Grupo de selectores.
+9) Seleccionar: descendiente. 
+10) Seleccionar: primer hijo. 
+11) Seleccionar: adyacente. 
+12) Seleccionar: por enlaces.
+13) Seleccionar: atributos.
+14) Otros selectores para enlaces.
+15) Nth-Child.
+
+ 

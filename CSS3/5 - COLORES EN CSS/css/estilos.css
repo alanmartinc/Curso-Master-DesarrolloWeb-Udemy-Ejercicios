@@ -1,0 +1,80 @@
+/* Colores por nombre */
+body {
+  background-color: aliceblue;
+}
+.contenedor {
+  margin: 0 auto;
+  background-color: white;
+  width: 1000px;
+}
+
+/* Colores en Hexadecimal */
+h2 {
+  color: #fe4918;
+}
+aside {
+  background-color: #a1cbff;
+}
+footer {
+  background-color: #353535;
+  color: #ffffff;
+}
+
+/* Colores por RGB */
+section#noticias {
+  background-color: rgb(242, 242, 242);
+}
+div.gran-promocion {
+  background-color: rgb(161, 203, 255);
+}
+
+/* Colores por HSL */
+nav {
+  background-color: hsl(13, 98%, 55%)
+}
+nav ul li a {
+  color: purple;
+  color: hsl(0, 0%, 100%);
+}
+
+/* Opacity */
+img.logo {
+  opacity: .3;
+}
+
+/* RGBA y HSLA */
+#noticias h2 {
+  background-color: rgba(254, 73, 24, .7);
+  padding: 10px;
+  color: #ffffff;
+  border-bottom: 10px solid rgba(254, 73, 24, 1);
+}
+nav {
+  background-color: hsla(13, 98%, 55%, .5);
+}
+
+/* Sombras */
+h2 {
+  text-shadow: 10px 10px 10px black;
+}
+ul#listado-cursos {
+  box-shadow: 2px 2px 10px 10px black;
+  box-shadow: 0px 20px 30px -20px rgba(0, 0, 0, 0.5);
+}
+
+/* Degradados */
+#cursos {
+  background: linear-gradient(rgba(254, 73, 24, 1),#353535);
+
+  /* Direcciones del radio */
+  background: linear-gradient(to top,rgba(254, 73, 24, 1),#353535);
+  background: linear-gradient(to right,rgba(254, 73, 24, 1),#353535);
+  background: linear-gradient(to left,rgba(254, 73, 24, 1),#353535);
+  background: linear-gradient(to bottom,rgba(254, 73, 24, 1),#353535);
+  background: linear-gradient(125deg,rgba(254, 73, 24, 1),#353535);
+  background: linear-gradient(-125deg,rgba(254, 73, 24, 1),#353535);
+
+  /* Centro hacia afuera */
+  background: radial-gradient(rgba(254, 73, 24, 1),#353535);
+  background: radial-gradient(rgba(254, 73, 24, 1),#353535);
+}
