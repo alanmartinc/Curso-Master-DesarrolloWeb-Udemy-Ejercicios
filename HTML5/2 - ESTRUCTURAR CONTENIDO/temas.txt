@@ -1,0 +1,8 @@
+1) Divs.
+2) Header.
+3) Nav.
+4) Role.
+5) Article.
+6) Main.
+7) Aside.
+8) Footer.

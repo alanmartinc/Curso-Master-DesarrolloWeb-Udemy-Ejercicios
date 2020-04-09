@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Practicando HTML">
+    <title>Mi primera Página Web con HTML5</title>
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <header role="banner">
+
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo Empresa">
+        </div>
+
+        <nav class="navegacion" role="navigation">
+
+          <ul>
+            <!-- Enlace para archivos -->
+            <li><a href="cursos.html">Nuestros Cursos</a></li>
+
+            <!-- Enlace para páginas externas: target="_blank" Abre una pestaña, target="_blank" Default. -->
+            <li><a href="http://google.com" target="_blank">Ir a Google</a></li>
+
+            <!-- Enlace dentro de la misma página -->
+            <li><a href="#noticias">Noticias</a></li>
+          </ul>
+
+        </nav>
+      </header>
+
+      <main class="contenido-principal" role="main">
+        <section id="noticias">
+
+          <h1>Últimas Noticias</h1>
+
+          <article>
+            <h2>Aprender a programar en el siglo 21 es muy importante</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+
+        </section>
+      </main>
+
+      <aside role="complementary">
+        
+        <h1>Próximos Cursos</h1>
+
+        <div>
+          <h2>PHP</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div>
+          <h2>MySQL</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer role="contentinfo">
+
+      <div class="nosotros">
+        <h1>Sobre nuestra escuela</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Practicando HTML">
+    <title>Mi primera Página Web con HTML5</title>
+  </head>
+  <body>
+    <h2>Videos en HTML5</h2>
+
+    <!-- Etiqueta de video -->
+
+    <!-- Preload - none: saca el video y al dar reproducir se carga -->
+
+    <!-- Preload - auto: si el usuario está conectado por datos moviles no descargue el video -->
+
+    <!-- Preload - metadata: descargar el video al darle play -->
+
+    <!-- Autoplay con Mute: Reproduce el video automáticamente pero sin sonido -->
+    <video width="300" controls preload="auto" autoplay muted>
+      <!-- Orden para cargar versiones de videos -->
+      <source src="video/codigo.mp4" type="video/mp4">
+      <source src="video/codigo.webm" type="video/webm">
+      <source src="video/codigo.ogv" type="video/ogg">
+      <p>Tu navegador no soporta video</p>
+    </video>
+
+    <!-- Poster es una imagen que se muestra en el video sin que se reproduzca -->
+
+    <!-- Loop: el video se reproduce continuamente -->
+    <video width="300" controls preload="auto" autoplay loop poster="img/poster.jpg">
+      <source src="video/codigo.mp4" type="video/mp4">
+      <source src="video/codigo.webm" type="video/webm">
+      <source src="video/codigo.ogv" type="video/ogg">
+      <p>Tu navegador no soporta video</p>
+    </video>
+
+    <h2>Audio en HTML5</h2>
+
+    <!-- Etiqueta de audio -->
+    <audio controls preload="none" autoplay loop="">
+      <!-- Orden para cargar versiones de audios -->
+      <source src="audio/audio.m4a" type="audio/mp4">
+      <source src="audio/audio.oga" type="audio/ogg">
+    </audio>
+
+  </body>
+</html>

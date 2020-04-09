@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Practicando HTML">
+    <title>Mi primera Página Web con HTML5</title>
+  </head>
+  <body>
+    <!-- Encabezados h1 al h6 -->
+    <h1>Contenido de la Página Web</h1>
+
+    <!-- Salto de línea -->
+    <br>
+
+    <!-- Inserta un espacio entre las palabras -->
+    &nbsp;
+    <!-- Inserta dos espacio entre las palabras -->
+    &ensp;
+
+    <!-- Parrafo -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>Texto en Negrita</h2>
+    <!-- Etiqueta "b" y "strong" para negrita -->
+    <p>Aprendiendo <b>HTML5 Y CSS3</b> con <strong>Udemy</strong></p>
+
+    <h2>Texto en Cursiva</h2>
+    <!-- Etiqueta "i" para cursiva -->
+    <p>Aprendiendo <i>HTML5 Y CSS3</i> con <i>Udemy</i></p>
+
+    <h2>Texto para Enfasis</h2>
+    <!-- Etiqueta "em" para enfasis -->
+    <p>Aprendiendo <em>HTML5 Y CSS3</em> con <em>Udemy</em></p>
+
+    <h2>Texto con Span</h2>
+    <!-- Etiqueta "span" selector -->
+    <p>Aprendiendo <span Style="color:red;">HTML5 Y CSS3</span> con Udemy</p>
+
+    <div class="poker">
+
+      <div class="carta carta1">
+        <!-- Caracteres de W3SCHOOLS -->
+        &hearts;
+      </div>
+
+      <div class="carta carta2">
+        &clubs;
+      </div>
+
+      <div class="carta carta3">
+        &diams;
+      </div>
+
+      <div class="carta carta4">
+        &spades;
+      </div>
+
+    </div>
+
+    <h2>Imprimir Imagenes</h2>
+
+    <!-- Etiqueta img para insertar imagenes -->
+    <img src="img/html5.png" alt="Logo HTML5" height="200">
+    <img src="img/css3.png" alt="Logo CSS3" height="200">
+    <img src="img/js.jpg" alt="Logo JS" height="200">
+
+    <!-- Estilos -->
+    <style>
+
+      .poker {
+        width: 600px;
+        margin: 0 auto;
+      }
+
+      .poker::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .carta {
+        float: left;
+        width: 48%;
+        text-align: center;
+        font-size: 160px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin-right: 5px;
+        height: 300px;
+        padding-top: 60px;
+      }
+
+      .carta1, .carta3 {
+        color: red;
+      }
+
+      .carta2, .carta4 {
+        float:right;
+      }
+      
+    </style>
+  </body>
+</html>

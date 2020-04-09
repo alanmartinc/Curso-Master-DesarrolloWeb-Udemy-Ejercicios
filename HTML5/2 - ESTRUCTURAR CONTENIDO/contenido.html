@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Practicando HTML">
+    <title>Mi primera Página Web con HTML5</title>
+  </head>
+  <body>
+    <!-- Divs, Header, Nav -->
+    <div class="contenedor">
+
+      <!-- role: Elemento orientado al sitio, ayuda a las personas con poca visibilidad visual a encontrar las cosas -->
+      <header role="banner">
+
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo Empresa">
+        </div>
+
+        <nav class="navegacion" role="navigation">
+          Menu Aquí
+        </nav>
+
+      </header>
+
+      <!-- La etiqueta main declara el contenido más importante de la Pág Web -->
+      <main class="contenido-principal" role="main">
+        <section>
+
+          <h1>Nuestros Cursos</h1>
+
+          <div>
+            <h2>HTML5</h2>
+            <img src="img/html5.png" alt="Logo HTML5" height="200">
+          </div>
+
+          <div>
+            <h2>CSS3</h2>
+            <img src="img/css3.png" alt="Logo CSS3" height="200">
+          </div>
+
+          <div>
+            <h2>JS</h2>
+            <img src="img/js.jpg" alt="Logo JS" height="200">
+          </div>
+
+        </section>
+
+        <section>
+          
+          <h1>Últimas Noticias</h1>
+          <!-- Article: Entradas de Bloc, Noticias, Foros -->
+
+          <article>
+            <h2>Aprender a programar en el siglo 21 es muy importante</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+
+        </section>
+      </main>
+
+      <!-- Elemento lateral al contenido principal -->
+      <aside role="complementary">
+
+        <h1>Próximos Cursos</h1>
+
+        <div>
+          <h2>PHP</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div>
+          <h2>MySQL</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- Parte inferior de la Página Web -->
+    <footer role="contentinfo">
+
+      <div class="nosotros">
+        <h1>Sobre nuestra escuela</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div class="menu">
+        <nav class="navegacion" role="navigation">
+          Menu Aquí
+        </nav>
+      </div>
+
+    </footer>
+  </body>
+</html>

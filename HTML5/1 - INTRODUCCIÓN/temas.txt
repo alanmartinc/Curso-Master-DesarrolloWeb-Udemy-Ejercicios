@@ -1,0 +1,5 @@
+1) Encabezados. 
+2) Parrafos y saltos de línea.
+3) Texto en negrita.
+4) Cursiva y span. 
+5) Caracteres especiales en HTML e imagenes. 

@@ -1,0 +1,2 @@
+1) Tabla headers, row y th.
+2) Tabla body, colspan y rowspan.

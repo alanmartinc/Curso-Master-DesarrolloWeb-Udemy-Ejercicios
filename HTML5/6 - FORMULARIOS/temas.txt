@@ -1,0 +1,13 @@
+1) Labels.
+2) Input text.
+3) Legends.
+4) Fieldsets.
+5) Radio.
+6) Select.
+7) Datalist.
+8) Checkbox.
+9) Button.
+10) Input: color, date, email, url, range.
+11) Campo numero.
+12) Password.
+13) Validacion en HTML5.

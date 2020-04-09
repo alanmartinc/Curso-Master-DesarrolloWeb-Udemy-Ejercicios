@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Practicando HTML">
+    <title>Mi primera Página Web con HTML5</title>
+  </head>
+  <body>
+  	<h2>Creando los formularios</h2>
+
+  	<!-- Formulario -->
+  	<form class="formulario">
+
+      <!-- Etiqueta que agrupa contenido -->
+  		<fieldset>
+
+        <!-- Imprime un letrero -->
+    		<legend>Tus Datos</legend>
+    			
+    		<!-- Label -->
+    		<label for="nombre">Nombre:</label>
+    		<!-- Input text -->
+    		<input type="text" name="nombre" id="nombre" placeholder="Tu nombre" autocomplete="off" required>
+
+    		<br>
+    		<br>
+
+    		<label for="apellido">Apellido:</label>
+    		<input type="text" name="apellido" id="apellido" placeholder="Tu apellido" autocomplete="off" required>
+
+        <br>
+        <br>
+
+        <label for="sexo">Sexo:</label> 
+        <br>
+        <!-- Input radio -->
+        <input type="radio" id="sexo" name="sexo" value="hombre" checked autofocus>Hombre 
+        <br>
+        <input type="radio" id="sexo" name="sexo" value="mujer">Mujer
+        <br>
+        <input type="radio" id="sexo" name="sexo" value="otro">Otro
+
+        <br>
+        <br>
+
+        <label>Fecha de cumpleaños</label>
+
+        <!-- Input date -->
+        <input type="date" name="fecha">
+
+        <!-- Input date and hour -->
+        <input type="datetime-local" name="fecha">
+
+        <br>
+        <br>
+
+        <label>Correo electrónico</label>
+
+        <!-- Input email -->
+        <input type="email" name="email" placeholder="correo@dominio.com" required>
+
+        <br>
+        <br>
+
+        <label>Tu sitio web</label>
+
+        <!-- Input url -->
+        <input type="url" name="sitioweb" placeholder="http://www.dominio.com">
+
+        <br>
+        <br>
+
+        <label>Cuanto sabes de HTML</label>
+
+        <!-- Input range -->
+        <input type="range" name="puntaje" min="0" max="10">
+
+        <br>
+        <br>
+
+        <label>Personas que vienen contigo</label>
+
+        <!-- Input campo númerico -->
+        <input type="number" name="cantidad" min="1" max="5">
+
+  		</fieldset>
+
+    		<br>
+    		<br>
+
+        <fieldset>
+
+          <legend>Información sobre tu curso</legend>
+
+          <label for="turno">Turno:</label>
+
+          <!-- Select -->
+          <select id="turno" class="turno" name="turno">
+
+            <option value="matutino">Matutino</option>
+            <option value="vespertino">Vespertino</option>
+            <option value="nocturno">Nocturno</option>
+            
+          </select>
+
+          <br>
+          <br>
+
+          <label>Que curso te gustaría que agregaramos?</label>
+          <input list="propuesta" name="encuesta">
+
+          <!-- Datalist -->
+          <datalist id="propuesta">
+            <option value="jQuery">
+            <option value="Aplicaciones Web">
+            <option value="AngularJS">
+            <option value="Bootstrap">
+          </datalist>
+
+          <br>
+          <br>
+
+          <label>Elige tus cursos</label> 
+          <br>
+          <!-- Checkbox -->
+          <input type="checkbox" value="php">PHP<br>
+          <input type="checkbox" value="php">HTML5<br>
+          <input type="checkbox" value="php">CSS<br>
+          <input type="checkbox" value="php">MySQL<br>
+          <input type="checkbox" value="php">JS<br>
+          <input type="checkbox" value="php">jQuery<br>
+
+          <br>
+          <br>
+
+          <label>Fecha que deseas iniciar el curso</label>
+
+          <!-- Input month -->
+          <input type="month" name="fecha">
+
+          <!-- Input time -->
+          <input type="time" name="fecha">
+
+          <!-- Input week -->
+          <input type="week" name="fecha">
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+
+          <legend>Extra</legend>
+
+          <label>Las primeras 10 personas reciben una camisa gratis, elige el color</label>
+
+          <!-- Input color -->
+          <input type="color" name="color">
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+
+          <legend>Usuario y Password</legend>
+
+          <label>Usuario:</label> <br>
+
+          <input type="text" name="usuario" placeholder="Usuario"> <br>
+
+          <label>Password:</label> <br>
+
+          <!-- Input password - required(validación) -->
+          <input type="password" name="password" placeholder="Password" required>
+
+        </fieldset>
+
+        <!-- Button reset -->
+        <button type="reset">Borrar</button>
+
+    		<!-- Input submit -->
+    		<input type="submit" name="Enviar">
+
+  	</form>
+
+  </body>
+  </html>

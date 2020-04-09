@@ -1,0 +1,7 @@
+1) Etiqueta de audio y video.
+2) Cargar distintas versiones para maxima compatibilidad.
+3) Atributo precargar.
+4) Autoplay. 
+5) Poster en video.
+6) Repetir audio o video. 
+7) Ancho y alto.
