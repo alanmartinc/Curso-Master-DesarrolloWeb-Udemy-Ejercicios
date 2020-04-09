@@ -1,0 +1,13 @@
+1) Introducción a media queries.
+2) La etiqueta meta viewport.
+3) Media queries al estilo desktop first.
+4) Media queries al estilo mobile first.
+5) Patron de diseño - mostly fluid.
+6) Patron de diseño - column drop.
+7) Patron de diseño - layout shifter.
+8) Patron de diseño - tiny tweaks.
+9) Patron de diseño - contenido principal y sidebar.
+10) Patron de diseño - tres columnas.
+11) Patron de diseño - tres columnas iguales.
+12) Patron de diseño - dos columnas iguales.
+13) Imagenes responsive y picture.
