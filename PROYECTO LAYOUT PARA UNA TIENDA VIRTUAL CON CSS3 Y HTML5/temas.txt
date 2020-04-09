@@ -1,0 +1,7 @@
+1) Contenedor header, logo y hero. 
+2) Agregando un producto.
+3) Agregando todos los productos.
+4) Estilos globales. 
+5) Agregando un fondo con degradado. 
+6) Estilos al header, contenedor y hero.
+7) Estilos a la seccion de productos.
