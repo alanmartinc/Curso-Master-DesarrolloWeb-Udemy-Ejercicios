@@ -1,0 +1,12 @@
+1) Creando una tabla y campos.
+2) Cambiando la estructura de nuestra tabla.
+3) Insertando datos.
+4) Insertando una serie de valores.
+5) Obteniendo datos.
+6) Actualizando informacion.
+7) Borrando informacion.
+8) Ordenando registros.
+9) Como contar los registros.
+10) Operadores.
+11) Funciones para cadenas.
+12) Funciones para numeros.
