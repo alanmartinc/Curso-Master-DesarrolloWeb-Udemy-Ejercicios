@@ -1,0 +1,1 @@
+En el index.html ir a script y en src seleccionar el ejercicio que queremos.
