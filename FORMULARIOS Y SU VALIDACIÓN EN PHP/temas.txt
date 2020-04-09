@@ -1,0 +1,10 @@
+1) Enviando datos por POST o por GET.
+2) Leyendo e imprimiendo los valores de un POST.
+3) Leyendo e imprimiendo los valores de un GET.
+4) Validando que un campo de texto no llegue vacio.
+5) Leyendo valores de un Checkbox.
+6) Leyendo valores de multiples Checkboxes.
+7) Leyendo valores de un select.
+8) Leyendo valores de un radio.
+9) Leyendo valores de un textarea.
+10) Seguridad en formularios.

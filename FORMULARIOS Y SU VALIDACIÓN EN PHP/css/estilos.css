@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+*, *:after, *:before {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color: orange;
+}
+.contenedor {
+  max-width:1000px;
+  margin:0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+h1, h2 {
+  text-align: center;
+  font-family: 'Proza Libre', sans-serif;
+}
+div.contenido {
+  width: 60%;
+  margin: 30px auto 0 auto;
+  font-size: 24px;
+}
+div.campo {
+  margin-bottom: 10px;
+}
+div.cursos,
+div.informacion,
+div.especializacion,
+div.tipo_curso {
+  margin-top: 20px;
+}
+div.informacion::after,
+div.cursos::after,
+div.tipo_curso::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+div.informacion .campo,
+div.cursos .campo {
+  width: 33.3%;
+  float: left;
+}
+div.tipo_curso > .campo {
+  width: 50%;
+  float: left;
+}
+label {
+  font-family: geneva;
+  display: block;
+  font-size: 16px;
+}
+input{
+  height: 30px;
+}
+div.textarea {
+  margin-top:20px;
+}
+textarea {
+  width: 100%;
+}
