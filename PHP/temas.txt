@@ -1,0 +1,23 @@
+1) Variables.
+2) Concatenando.
+3) PHP en HTML.
+4) Comentarios.
+5) Operaciones.
+6) Estructuras de control.
+7) Switch.
+8) Arreglos indexados.
+9) Las funciones print_r y var_dump.
+10) Agregando nuevos valores a un array.
+11) Arrays asociativos.
+12) Arrays multidimensionales.
+13) Revisando si un valor existe en un arreglo.
+14) Recorriendo un arreglo con foreach.
+15) Recorriendo un arreglo multidimensional.
+16) For.
+17) While.
+18) Funciones.
+19) Funciones con argumentos.
+20) Funciones que retornan valores.
+21) Valores por defecto en funciones.
+22) Guardando datos en un arreglo mediante una funcion.
+23) Enviando valores de una pagina a otra con _get.

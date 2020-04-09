@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+*, *:after, *:before {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color: orange;
+}
+.contenedor {
+  max-width:1000px;
+  margin:0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+h1 {
+  text-align: center;
+  font-family: 'Proza Libre', sans-serif;
+}
+div.contenido {
+  width: 60%;
+  margin: 30px auto 0 auto;
+  font-size: 24px;
+}
