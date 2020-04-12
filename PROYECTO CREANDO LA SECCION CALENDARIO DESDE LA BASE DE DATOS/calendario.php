@@ -6,7 +6,7 @@
 
     <?php
         try {
-            require('includes/funciones/bd_conexion.php');
+            require_once('includes/funciones/bd_conexion.php');
             $sql = " SELECT evento_id, nombre_evento, fecha_evento, hora_evento, cat_evento, icono, nombre_invitado, apellido_invitado ";
             $sql .= " FROM eventos ";
             $sql .= " INNER JOIN categoria_evento ";
