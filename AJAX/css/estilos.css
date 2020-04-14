@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(131, 140, 145);
+}
+.contenedor {
+  max-width: 1000px;
+  width: 100%;
+  margin:0 auto;
+  height:100vh;
+  background-color: white;
+  padding: 30px 0 0 0;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  margin-top: 30px;
+}
