@@ -3,7 +3,7 @@
 
     <?php
         try {
-            require('includes/funciones/bd_conexion.php');
+            require_once('includes/funciones/bd_conexion.php');
         $sql = " SELECT * FROM `invitados` ";
             $resultado = $conn->query($sql);
         } catch (\Exception $e) {
